@@ -1,23 +1,23 @@
 package hcmute.edu.vn.store.adapter;
 
-        import android.content.Context;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.widget.TextView;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
-        import androidx.annotation.NonNull;
-        import androidx.recyclerview.widget.LinearLayoutManager;
-        import androidx.recyclerview.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-        import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.EventBus;
 
-        import java.util.List;
+import java.util.List;
 
-        import hcmute.edu.vn.store.Interface.ItemClickListener;
-        import hcmute.edu.vn.store.R;
-        import hcmute.edu.vn.store.model.DonHang;
-        import hcmute.edu.vn.store.model.EventBus.DonHangEvent;
+import hcmute.edu.vn.store.Interface.ItemClickListener;
+import hcmute.edu.vn.store.R;
+import hcmute.edu.vn.store.model.DonHang;
+import hcmute.edu.vn.store.model.EventBus.DonHangEvent;
 
 public class DonHangAdapter extends RecyclerView.Adapter<DonHangAdapter.MyViewHolder> {
 

@@ -79,7 +79,7 @@ public class SanPhamMoiAdapter extends RecyclerView.Adapter<SanPhamMoiAdapter.My
         return array.size();
     }
 
-    public class MyViewHolder extends  RecyclerView.ViewHolder implements View.OnClickListener, View.OnCreateContextMenuListener, View.OnLongClickListener {
+    public class MyViewHolder extends  RecyclerView.ViewHolder implements View.OnClickListener {
         TextView txtgia, txtten;
         ImageView imghinhanh;
         private ItemClickListener itemClickListener;
@@ -89,8 +89,8 @@ public class SanPhamMoiAdapter extends RecyclerView.Adapter<SanPhamMoiAdapter.My
             txtten = itemView.findViewById(R.id.itemsp_ten);
             imghinhanh = itemView.findViewById(R.id.itemsp_image);
             itemView.setOnClickListener(this);
-            itemView.setOnCreateContextMenuListener(this);
-            itemView.setOnLongClickListener(this);
+//            itemView.setOnCreateContextMenuListener(this);
+//            itemView.setOnLongClickListener(this);
         }
 
         public void setItemClickListener(ItemClickListener itemClickListener) {
@@ -102,16 +102,16 @@ public class SanPhamMoiAdapter extends RecyclerView.Adapter<SanPhamMoiAdapter.My
             itemClickListener.onClick(view,getAdapterPosition(),false);
         }
 
-        @Override
-        public void onCreateContextMenu(ContextMenu contextMenu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
-            contextMenu.add(0,0,getAdapterPosition(),"Sửa");
-            contextMenu.add(0,1,getAdapterPosition(),"Xóa");
-        }
+//        @Override
+//        public void onCreateContextMenu(ContextMenu contextMenu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
+//            contextMenu.add(0,0,getAdapterPosition(),"Sửa");
+//            contextMenu.add(0,1,getAdapterPosition(),"Xóa");
+//        }
 
-        @Override
-        public boolean onLongClick(View view) {
-            itemClickListener.onClick(view,getAdapterPosition(),true);
-            return false;
-        }
+//        @Override
+//        public boolean onLongClick(View view) {
+//            itemClickListener.onClick(view,getAdapterPosition(),true);
+//            return false;
+//        }
     }
 }

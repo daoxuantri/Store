@@ -51,7 +51,7 @@ public class QuanLiActivity extends AppCompatActivity {
         getSpMoi();
     }
 
-    
+
     private void initView() {
         img_them = findViewById(R.id.img_them);
         recyclerView = findViewById(R.id.recycleview_ql);
@@ -77,7 +77,7 @@ public class QuanLiActivity extends AppCompatActivity {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(
                         messageModel -> {
-                            if(messageModel.isSucess()){
+                            if(messageModel.isSuccess()){
                                 Toast.makeText(getApplicationContext(), messageModel.getMessage(), Toast.LENGTH_LONG).show();
                                 getSpMoi();
                             }else {

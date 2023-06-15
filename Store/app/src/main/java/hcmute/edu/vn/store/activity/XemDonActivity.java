@@ -199,7 +199,7 @@ public class XemDonActivity extends AppCompatActivity {
             }
         });
 
-        
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(view);
         dialog = builder.create();

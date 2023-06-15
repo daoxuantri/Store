@@ -35,7 +35,7 @@ public interface ApiBanHang {
     @POST("dangki.php")
     @FormUrlEncoded
     Observable<UserModel> dangKi(
-            @Field("email") String page,
+            @Field("email") String email,
             @Field("pass") String pass,
             @Field("username") String username,
             @Field("mobile") String mobile,
@@ -61,7 +61,7 @@ public interface ApiBanHang {
 
     @POST("donhang.php")
     @FormUrlEncoded
-    Observable<UserModel> createOder(
+    Observable<MessageModel> createOder(
             @Field("email") String email,
             @Field("sdt") String sdt,
             @Field("tongtien") String tongtien,
@@ -122,23 +122,28 @@ public interface ApiBanHang {
             @Field("token") String token
     );
 
+        @POST("updatemomo.php")
+    @FormUrlEncoded
+    Observable<MessageModel> updateMomo(
+            @Field("id") int id,
+            @Field("token") String token
+    );
+
+    @POST("gettoken.php")
+    @FormUrlEncoded
+    Observable<UserModel> gettoken(
+            @Field("status") int status
+            ,
+            @Field("iduser") int iduser
+
+    );
+
+
     @POST("updateorder.php")
     @FormUrlEncoded
     Observable<MessageModel> updateOrder(
             @Field("id") int id,
             @Field("trangthai") int trangthai
-    );
-
-    @Multipart
-    @POST("upload.php")
-    Call<MessageModel> uploadFile(@Part MultipartBody.Part file);
-
-    @POST("gettoken.php")
-    @FormUrlEncoded
-    Observable<UserModel> gettoken(
-            @Field("status") int status,
-            @Field("iduser") int iduser
-
     );
 
 

@@ -14,12 +14,12 @@
         <!-- Customize your theme here. -->
     </style>
 
-<!--    <style name="CustomShapeAppearance">-->
-<!--        <item name="neumorph_cornerFamily">rounded</item>-->
-<!--        <item name="neumorph_cornerSize">32dp</item>-->
-<!--    </style>-->
-<!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light">-->
-<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
-<!--        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearance</item>-->
-<!--    </style>-->
+    <style name="CustomShapeAppearance">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">32dp</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearance</item>
+    </style>
 </resources>

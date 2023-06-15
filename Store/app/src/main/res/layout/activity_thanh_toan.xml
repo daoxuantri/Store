@@ -142,6 +142,21 @@
       app:layout_constraintTop_toBottomOf="@id/inputlayout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"/>
+<!--  <androidx.appcompat.widget.AppCompatButton-->
+<!--      android:id="@+id/btnmomo"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_marginBottom="10sp"-->
+<!--      android:layout_marginRight="10sp"-->
+<!--      android:layout_marginLeft="10sp"-->
+<!--      android:background="#b0006d"-->
+<!--      android:text="Thanh Toán Bằng MoMo (LỖI)"-->
+<!--      android:textColor="@color/white"-->
+<!--      android:textStyle="bold"-->
+<!--      android:textSize="16sp"-->
+<!--      android:layout_marginTop="20sp"-->
+<!--      app:layout_constraintTop_toBottomOf="@+id/btndathang"-->
+<!--      tools:layout_editor_absoluteX="10dp" />-->
   
 
 

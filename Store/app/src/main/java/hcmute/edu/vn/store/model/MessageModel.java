@@ -1,9 +1,20 @@
 package hcmute.edu.vn.store.model;
 
-public class MessageModel {
+public class  MessageModel {
     boolean success;
     String message;
     String name;
+    String iddonhang;
+
+    public String getIddonhang() {
+        return iddonhang;
+    }
+
+    public void setIddonhang(String iddonhang) {
+        this.iddonhang = iddonhang;
+    }
+
+
 
     public String getName() {
         return name;
@@ -13,12 +24,12 @@ public class MessageModel {
         this.name = name;
     }
 
-    public boolean isSucess() {
+    public boolean isSuccess() {
         return success;
     }
 
-    public void setSucess(boolean sucess) {
-        this.success = sucess;
+    public void setSuccess(boolean success) {
+        this.success = success;
     }
 
     public String getMessage() {

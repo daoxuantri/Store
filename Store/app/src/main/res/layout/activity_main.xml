@@ -11,6 +11,7 @@
         android:id="@+id/drawerlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -18,40 +19,43 @@
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarmanhinhchinh"
-                app:title="Trang chính"
-                android:background="#ff00dfff"
                 android:layout_width="match_parent"
-                android:layout_height="?android:attr/actionBarSize">
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="#ff00dfff"
+                app:title="Trang chính">
+
                 <LinearLayout
-                    android:layout_gravity="right"
                     android:layout_width="wrap_content"
                     android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="right"
                     android:orientation="horizontal">
+
                     <ImageView
                         android:id="@+id/imgsearch"
-                        android:layout_marginRight="15dp"
-                        android:src="@drawable/ic_baseline_search_24"
                         android:layout_width="wrap_content"
-                        android:layout_height="?attr/actionBarSize"/>
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_baseline_search_24" />
+
                     <FrameLayout
                         android:id="@+id/framegiohang"
-                        android:layout_marginRight="10dp"
                         android:layout_width="55dp"
-                        android:layout_height="?attr/actionBarSize">
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginRight="10dp">
+
                         <com.nex3z.notificationbadge.NotificationBadge
+                            android:id="@+id/menu_sl"
                             android:layout_width="28dp"
                             android:layout_height="28dp"
-                            android:layout_gravity="top|right"
-                            android:id="@+id/menu_sl"/>
+                            android:layout_gravity="top|right" />
+
                         <ImageView
-                            android:layout_marginTop="15dp"
-                            android:src="@drawable/ic_cart_24"
                             android:layout_width="35dp"
-                            android:layout_height="35dp"/>
+                            android:layout_height="35dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/ic_cart_24" />
                     </FrameLayout>
                 </LinearLayout>
-
-
 
 
             </androidx.appcompat.widget.Toolbar>
@@ -62,25 +66,27 @@
                 android:layout_height="200dp">
 
             </ViewFlipper>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="#5992d2">
+                android:background="#5992d2"
+                android:orientation="vertical">
+
                 <TextView
-                    android:textSize="20dp"
-                    android:layout_marginLeft="10dp"
-                    android:textColor="@android:color/holo_red_light"
-                    android:text="Sản phẩm mới nhất"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sản phẩm mới nhất"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="20dp" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycleview"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="5dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp">
 
 
                 </androidx.recyclerview.widget.RecyclerView>
@@ -104,6 +110,6 @@
 
 
     </androidx.drawerlayout.widget.DrawerLayout>
-
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
